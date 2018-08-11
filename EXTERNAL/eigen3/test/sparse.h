@@ -29,10 +29,10 @@
 #include "main.h"
 
 #if EIGEN_GNUC_AT_LEAST(4,0) && !defined __ICC && !defined(__clang__)
-#include <tr1/unordered_map>
+#include <unordered_map>
 #define EIGEN_UNORDERED_MAP_SUPPORT
 namespace std {
-  using std::tr1::unordered_map;
+  using std::unordered_map;
 }
 #endif
 
